@@ -1,6 +1,13 @@
 class Parking
     def calculatefee(startHours, startMinutes, startSeconds, endHours, endMinutes,endSeconds)
-        25
+        startTime = (startHours * 60 * 60) + (startMinutes * 60) + startSeconds;
+        endTime = (endHours * 60 * 60) + (endMinutes * 60) + endSeconds;
+        if(endTime - startTime <= 60*60)
+            puts endTime 
+            25
+        else 
+            50
+        end
     end
 end
 
