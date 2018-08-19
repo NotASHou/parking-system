@@ -3,10 +3,11 @@ class Parking
         startTime = (startHours * 60 * 60) + (startMinutes * 60) + startSeconds;
         endTime = (endHours * 60 * 60) + (endMinutes * 60) + endSeconds;
         if(endTime - startTime <= 60*60)
-            puts endTime 
             25
-        else 
+        elsif(endTime - startTime <= 2 *60*60) 
             50
+        elsif(endTime - startTime <= 3 *60*60)
+            80 
         end
     end
 end
