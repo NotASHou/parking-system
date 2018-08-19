@@ -14,6 +14,8 @@ class Parking
             145
         elsif(endTime - startTime <= 6 *60*60)
             180
+        elsif(endTime - startTime > 6 *60*60)
+            250
         end
     end
 end
